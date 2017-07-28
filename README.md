@@ -1,1 +1,1 @@
-# A generic npm starter with es6 transpilation
+# A generic npm starter with es6 transpilation 
