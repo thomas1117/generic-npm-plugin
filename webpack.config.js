@@ -16,9 +16,5 @@ module.exports = {
 	        presets: ['es2015'],
 	      }
 	    }]
-	},
-	plugins: [
-    	new UglifyJSPlugin()
-	]
-
+	}
 }
