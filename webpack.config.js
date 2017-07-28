@@ -8,15 +8,14 @@ module.exports = {
 		'filename': 'dist/bundle-min.js'
 	},
 	module: {
-		rules: [
-		{
-			test: /\.js$/,
-			exclude: /(node_modules|bower_components)/,
-			use: {
-				loader: 'babel-loader',
-			}
-		}
-		]
+	    loaders: [{
+	      test: /\.js$/,
+	      exclude: /node_modules/,
+	      loader: 'babel-loader',
+	      query: {
+	        presets: ['es2015'],
+	      }
+	    }]
 	},
 	plugins: [
     	new UglifyJSPlugin()
