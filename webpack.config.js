@@ -6,6 +6,7 @@ module.exports = {
 		path: __dirname,
 		'filename': 'dist/bundle-min.js'
 	},
+	target: 'node',
 	module: {
 	    loaders: [{
 	      test: /\.js$/,
