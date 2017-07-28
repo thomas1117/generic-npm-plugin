@@ -2,6 +2,6 @@
 
 const plugin = 'plugin';
 
-module.exports = function() {
-	console.log('generic plugin =>', plugin)
+module.exports = {
+	hello: true
 }
