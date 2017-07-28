@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
 	entry: './src/index.js',
@@ -6,7 +7,6 @@ module.exports = {
 		path: __dirname,
 		'filename': 'dist/bundle-min.js'
 	},
-	target: 'node',
 	module: {
 	    loaders: [{
 	      test: /\.js$/,
@@ -16,5 +16,8 @@ module.exports = {
 	        presets: ['es2015'],
 	      }
 	    }]
-	}
+	},
+	plugins: [
+    	new UglifyJSPlugin()
+  	]
 }
