@@ -3,6 +3,7 @@ var UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
 	entry: './src/index.js',
+	target: "node",
 	output: {
 		path: __dirname,
 		'filename': 'dist/bundle-min.js'
