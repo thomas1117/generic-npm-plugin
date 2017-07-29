@@ -1,6 +1,4 @@
 var webpack = require('webpack');
-var UglifyJSPlugin = require('uglifyjs-webpack-plugin')
-
 module.exports = {
 	entry: './src/index.js',
 	target: "node",
@@ -17,8 +15,5 @@ module.exports = {
 	        presets: ['es2015'],
 	      }
 	    }]
-	},
-	plugins: [
-    	new UglifyJSPlugin()
-  	]
+	}
 }
